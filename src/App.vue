@@ -1,10 +1,12 @@
 <template>
   <div>
     <Navbar />
-    <Hero /> <!-- v-if -->
+    <Hero v-if="$route.name === 'homepage'" /> <!-- v-if -->
 
     <!-- router -->
-    <ProductsPage />
+    <!-- <ProductsPage /> -->
+
+    <router-view></router-view>
 
     <Footer /> <!-- v-if -->
   </div>
