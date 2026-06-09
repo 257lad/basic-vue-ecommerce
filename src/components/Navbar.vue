@@ -1,13 +1,29 @@
 <template>
     <div>
         <h1>Navbar</h1>
+        <div class="search">
+            <input type="text" >
+            <Search />
+        </div>
         <span><i class="fa-solid fa-cart-shopping"></i></span>
     </div>
 </template>
 
 <script>
+import { 
+    ChevronDown, 
+    Search, 
+    ShoppingCart, 
+    UserCircle2 
+} from '@lucide/vue';
+
 export default {
-    
+    components: {
+        Search,
+        ShoppingCart, 
+        ChevronDown,
+        UserCircle2
+    }
 }
 </script>
 
